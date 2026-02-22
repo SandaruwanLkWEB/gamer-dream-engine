@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Gamepad2 } from "lucide-react";
+import { Menu, X, Store } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -18,9 +18,9 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 glass">
       <div className="container mx-auto flex items-center justify-between py-4 px-4">
         <Link to="/" className="flex items-center gap-2">
-          <Gamepad2 className="h-8 w-8 text-primary" />
+          <Store className="h-8 w-8 text-primary" />
           <span className="font-display text-2xl font-bold text-primary text-glow">
-            TopGamer
+            Rivistore
           </span>
         </Link>
 

@@ -30,7 +30,7 @@ const Contact = () => {
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
                   <Mail className="h-5 w-5 text-primary" />
-                  <span className="text-muted-foreground">info@topgamer.lk</span>
+                  <span className="text-muted-foreground">info@rivistore.com</span>
                 </div>
                 <div className="flex items-center gap-4">
                   <Phone className="h-5 w-5 text-primary" />
