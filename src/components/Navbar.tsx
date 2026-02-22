@@ -20,7 +20,7 @@ const Navbar = () => {
         <Link to="/" className="flex items-center gap-2">
           <Store className="h-8 w-8 text-primary" />
           <span className="font-display text-2xl font-bold text-primary text-glow">
-            Rivistore
+            Rivi Topup Store
           </span>
         </Link>
 
