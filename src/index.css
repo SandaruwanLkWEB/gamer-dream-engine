@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'Urban Jungle';
+  src: url('/fonts/urban-jungle.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 @tailwind base;
 @tailwind components;
@@ -49,7 +57,7 @@
     --sidebar-border: 220 15% 16%;
     --sidebar-ring: 180 100% 50%;
 
-    --font-display: 'Rajdhani', sans-serif;
+    --font-display: 'Urban Jungle', sans-serif;
     --font-body: 'Inter', sans-serif;
   }
 }

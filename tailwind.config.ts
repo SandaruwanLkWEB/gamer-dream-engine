@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['Rajdhani', 'sans-serif'],
+        display: ['Urban Jungle', 'sans-serif'],
         body: ['Inter', 'sans-serif'],
       },
       colors: {
