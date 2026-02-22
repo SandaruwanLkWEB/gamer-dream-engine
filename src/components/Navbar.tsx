@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Store } from "lucide-react";
+import { Menu, X, LogIn, UserPlus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -15,13 +15,17 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 glass">
-      <div className="container mx-auto flex items-center justify-between py-4 px-4">
-        <Link to="/" className="flex items-center gap-2">
-          <Store className="h-8 w-8 text-primary" />
-          <span className="font-display text-2xl font-bold text-primary text-glow">
-            Rivi Topup Store
-          </span>
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-destructive/40">
+      <div className="container mx-auto flex items-center justify-between py-3 px-4">
+        <Link to="/" className="flex items-center gap-3">
+          <div className="flex flex-col leading-none">
+            <span className="font-display text-3xl md:text-4xl font-bold text-destructive tracking-wide" style={{ lineHeight: 1 }}>
+              RIVI TOPUP
+            </span>
+            <span className="text-xs md:text-sm font-body font-medium text-foreground tracking-[0.35em] uppercase mt-0.5">
+              Store
+            </span>
+          </div>
         </Link>
 
         {/* Desktop Nav */}
@@ -42,14 +46,16 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-3">
-          <Link to="/register">
-            <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-display text-base">
-              Register
+          <Link to="/signin">
+            <Button variant="outline" className="border-border bg-secondary text-foreground hover:bg-secondary/80 font-body text-base rounded-full px-6 gap-2">
+              <LogIn className="h-4 w-4" />
+              Login
             </Button>
           </Link>
-          <Link to="/signin">
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/80 font-display text-base box-glow">
-              Sign In
+          <Link to="/register">
+            <Button className="bg-destructive text-destructive-foreground hover:bg-destructive/90 font-body text-base rounded-full px-6 gap-2">
+              <UserPlus className="h-4 w-4" />
+              Register
             </Button>
           </Link>
         </div>
@@ -70,7 +76,7 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden glass border-t border-border"
+            className="md:hidden bg-background border-t border-border"
           >
             <div className="flex flex-col gap-4 p-4">
               {navLinks.map((link) => (
@@ -86,14 +92,16 @@ const Navbar = () => {
                 </Link>
               ))}
               <div className="flex gap-3 pt-2">
-                <Link to="/register" className="flex-1">
-                  <Button variant="outline" className="w-full border-primary text-primary font-display">
-                    Register
+                <Link to="/signin" className="flex-1">
+                  <Button variant="outline" className="w-full border-border bg-secondary text-foreground font-body rounded-full gap-2">
+                    <LogIn className="h-4 w-4" />
+                    Login
                   </Button>
                 </Link>
-                <Link to="/signin" className="flex-1">
-                  <Button className="w-full bg-primary text-primary-foreground font-display">
-                    Sign In
+                <Link to="/register" className="flex-1">
+                  <Button className="w-full bg-destructive text-destructive-foreground font-body rounded-full gap-2">
+                    <UserPlus className="h-4 w-4" />
+                    Register
                   </Button>
                 </Link>
               </div>
