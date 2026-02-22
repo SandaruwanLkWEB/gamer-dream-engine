@@ -26,7 +26,7 @@ const About = () => {
               Who We Are
             </h1>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              TopGamer is Sri Lanka's leading gaming platform, providing instant game top-ups, 
+              Rivistore is Sri Lanka's leading gaming platform, providing instant game top-ups, 
               credits, and in-game purchases for your favorite games.
             </p>
           </motion.div>

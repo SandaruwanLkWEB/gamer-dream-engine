@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Gamepad2 } from "lucide-react";
+import { Store } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Register = () => {
@@ -21,8 +21,8 @@ const Register = () => {
         className="w-full max-w-md bg-card border border-border rounded-lg p-8"
       >
         <Link to="/" className="flex items-center gap-2 justify-center mb-8">
-          <Gamepad2 className="h-8 w-8 text-primary" />
-          <span className="font-display text-2xl font-bold text-primary text-glow">TopGamer</span>
+          <Store className="h-8 w-8 text-primary" />
+          <span className="font-display text-2xl font-bold text-primary text-glow">Rivistore</span>
         </Link>
 
         <h1 className="font-display text-3xl font-bold text-foreground text-center mb-6">Register</h1>

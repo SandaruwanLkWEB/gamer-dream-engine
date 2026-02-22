@@ -27,7 +27,7 @@ const TestimonialsSection = () => {
           Testimonials
         </span>
         <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-2">
-          Verified TopGamer Users
+          Verified Rivistore Users
         </h2>
       </motion.div>
 
