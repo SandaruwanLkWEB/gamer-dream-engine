@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, LogIn, UserPlus } from "lucide-react";
+import logo from "@/assets/logo.jpg";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -18,6 +19,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-destructive/40">
       <div className="container mx-auto flex items-center justify-between py-3 px-4">
         <Link to="/" className="flex items-center gap-3">
+          <img src={logo} alt="Rivi Topup Store logo" className="h-10 w-10 md:h-12 md:w-12 rounded-full object-cover" />
           <div className="flex flex-col leading-none">
             <span className="font-display text-3xl md:text-4xl font-bold text-destructive tracking-wide" style={{ lineHeight: 1 }}>
               RIVI TOPUP
