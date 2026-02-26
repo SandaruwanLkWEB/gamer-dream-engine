@@ -18,34 +18,26 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-destructive/40">
       <div className="container mx-auto flex items-center justify-between py-3 px-4">
-        <Link to="/" className="flex items-center gap-3">
-          <img src={logo} alt="Rivi Topup Store logo" className="h-10 w-10 md:h-12 md:w-12 rounded-full object-cover" />
+        <Link to="/" className="flex items-center gap-4">
+          <img src={logo} alt="Rivi Topup Store logo" className="h-12 w-12 md:h-14 md:w-14 rounded-full object-cover" />
           <div className="flex flex-col leading-none">
-            <span className="font-display text-3xl md:text-4xl font-bold text-destructive tracking-wide" style={{ lineHeight: 1 }}>
+            <span
+              className="font-display text-3xl md:text-4xl font-bold tracking-wide"
+              style={{
+                lineHeight: 1,
+                background: "linear-gradient(180deg, #ff6b6b 0%, #cc2a2a 100%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                textShadow: "none",
+              }}
+            >
               RIVI TOPUP
             </span>
-            <span className="text-xs md:text-sm font-body font-medium text-foreground tracking-[0.35em] uppercase mt-0.5">
-              Store
+            <span className="text-xs md:text-sm font-body font-semibold text-foreground tracking-[0.45em] uppercase mt-1">
+              STORE
             </span>
           </div>
         </Link>
-
-        {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <Link
-              key={link.path}
-              to={link.path}
-              className={`font-display text-lg font-medium transition-colors hover:text-primary ${
-                location.pathname === link.path
-                  ? "text-primary text-glow"
-                  : "text-foreground"
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
-        </div>
 
         <div className="hidden md:flex items-center gap-3">
           <Link to="/signin">
