@@ -2,7 +2,8 @@
 
 @font-face {
   font-family: 'Urban Jungle';
-  src: url('/fonts/urban-jungle.ttf') format('truetype');
+  src: url('/fonts/urban-jungle.otf') format('opentype'),
+       url('/fonts/urban-jungle.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
